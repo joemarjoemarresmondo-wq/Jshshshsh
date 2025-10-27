@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Escosar Dave Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(90deg, #ff6b00, #ff9a00);
+      color: white;
+      padding: 1.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    /* SEARCH BAR */
+    .search-bar {
+      text-align: center;
+      margin: 1rem auto;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 500px;
+      padding: 0.7rem;
+      font-size: 1rem;
+      border: 2px solid #ff6b00;
+      border-radius: 5px;
+      outline: none;
+    }
+    .search-bar input:focus {
+      border-color: #ff9a00;
+    }
+
+    /* PRODUCT GRID */
+    .products {
+      max-width: 1100px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .product {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .product img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+    .product-info {
+      padding: 1rem;
+      text-align: center;
+    }
+    .product-info h3 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      color: #333;
+    }
+    .price {
+      color: #ff6b00;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .product-info a {
+      display: inline-block;
+      background: #ff6b00;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    .product-info a:hover {
+      background: #ff9a00;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Escosar Dave Store</h1>
+    <p>Welcome to my online shop — inspired by Lazada!</p>
+  </header>
+
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+  </div>
+
+  <main>
+    <section class="products" id="productList">
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="https://lzd-img-global.slatic.net/g/p/2d60b1c3f7f53a3b6741ef22683a028a.jpg_720x720q80.jpg" alt="Men's Underwear">
+        <div class="product-info">
+          <h3>Men’s Cotton Underwear (3 pcs)</h3>
+          <div class="price">₱299.00</div>
+          <a href="https://www.lazada.com.ph/products/i3786816976.html" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="1.jpg.JPEG" alt="Boxer Shorts">
+        <div class="product-info">
+          <h3>Men’s Boxer Shorts (Pack of 5)</h3>
+          <div class="price">₱499.00</div>
+          <a href="https://www.lazada.com.ph/products/i3834968655.html" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="https://lzd-img-global.slatic.net/g/p/d1c51dd630d1b5099c1b8c7b3434e546.jpg_720x720q80.jpg" alt="Briefs">
+        <div class="product-info">
+          <h3>Men’s Sport Briefs (Set of 3)</h3>
+          <div class="price">₱399.00</div>
+          <a href="https://www.lazada.com.ph/products/i4088665828.html" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="https://lzd-img-global.slatic.net/g/p/6810876548b5c727799cf82c3d5b8726.jpg_720x720q80.jpg" alt="Underwear Set">
+        <div class="product-info">
+          <h3>Classic Underwear Set</h3>
+          <div class="price">₱459.00</div>
+          <a href="https://www.lazada.com.ph/products/i4136930613.html" target="_blank">Buy Now</a>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product">
+        <img src="https://lzd-img-global.slatic.net/g/p/14fd10a43c6ee9cb3905db10d21b32d5.jpg_720x720q80.jpg" alt="Underwear Premium">
+        <div class="product-info">
+          <h3>Premium Soft Underwear (Pack of 4)</h3>
+          <div class="price">₱549.00</div>
+          <a href="https://www.lazada.com.ph/products/i4258826182.html" target="_blank">Buy Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Escosar Dave Store | Powered by Lazada product links</p>
+  </footer>
+
+  <script>
+    // Simple product search filter
+    const searchInput = document.getElementById('searchInput');
+    const products = document.querySelectorAll('.product');
+
+    searchInput.addEventListener('keyup', function() {
+      const term = this.value.toLowerCase();
+      products.forEach(product => {
+        const text = product.textContent.toLowerCase();
+        product.style.display = text.includes(term) ? 'block' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
